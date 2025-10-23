@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Red de Colaboración Internacional",
+    "slug": "red-colaboracion",
+    "description": "Red de instituciones de investigación colaboradoras en América Latina, Europa y Asia",
+    "status": "recurring",
+    "start_year": 2020,
+    "image": "red-colaboracion.jpg",
+    "partners": [
+      "Max Planck Institute for Plant Breeding Research (Alemania)",
+      "University of California, Davis (USA)",
+      "INRA - Institut National de la Recherche Agronomique (Francia)",
+      "Universidad Nacional Autónoma de México (México)",
+      "Universidade de São Paulo (Brasil)"
+    ]
+  },
+  {
+    "title": "Programa de Formación Doctoral",
+    "slug": "programa-doctoral",
+    "description": "Programa de formación de capital humano avanzado con becas para estudiantes de doctorado",
+    "status": "recurring",
+    "start_year": 2021,
+    "image": "programa-doctoral.jpg",
+    "details": "Ofrecemos becas completas para estudiantes de doctorado en áreas relacionadas con inteligencia vegetal"
+  },
+  {
+    "title": "Serie de Seminarios MIPP",
+    "slug": "seminarios-mipp",
+    "description": "Serie mensual de seminarios con investigadores nacionales e internacionales",
+    "status": "recurring",
+    "start_year": 2020,
+    "image": "seminarios.jpg",
+    "frequency": "Mensual",
+    "details": "Todos los terceros viernes de cada mes, 15:00 hrs (hora de Chile)"
+  },
+  {
+    "title": "Proyecto Biobanco de Plantas Nativas",
+    "slug": "biobanco-plantas",
+    "description": "Colección y caracterización de plantas nativas de Chile para investigación y conservación",
+    "status": "one-off",
+    "start_year": 2022,
+    "end_year": 2025,
+    "image": "biobanco.jpg",
+    "funding": "ANID - Proyecto especial"
+  },
+  {
+    "title": "Escuela de Verano en Biotecnología Vegetal",
+    "slug": "escuela-verano",
+    "description": "Programa intensivo de formación para estudiantes de postgrado latinoamericanos",
+    "status": "recurring",
+    "start_year": 2023,
+    "image": "escuela-verano.jpg",
+    "frequency": "Anual",
+    "details": "Curso de dos semanas en enero de cada año"
+  },
+  {
+    "title": "Simposio Inaugural 2020",
+    "slug": "simposio-inaugural",
+    "description": "Evento de lanzamiento del Instituto Milenio MIPP",
+    "status": "archived",
+    "start_year": 2020,
+    "end_year": 2020,
+    "image": "simposio-inaugural.jpg"
+  }
+]

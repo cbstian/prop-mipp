@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce a los investigadores del MIPP, expertos en políticas públicas productivas de diversas instituciones académicas.">
+    <title>Investigadores - MIPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/investigators.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="site-logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#203e8f"/>
+                        <text x="20" y="28" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">M</text>
+                    </svg>
+                    <span>MIPP</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">MIPP</a></li>
+                        <li><a href="research.html">Investigación</a></li>
+                        <li><a href="investigators.html" class="active">Investigadores</a></li>
+                        <li><a href="publications.html">Publicaciones</a></li>
+                        <li><a href="events.html">Agenda</a></li>
+                        <li><a href="initiatives.html">Iniciativas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumbs bg-gray-light">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Investigadores</li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="text-center">Nuestro Equipo de Investigadores</h1>
+                <p class="text-center" style="font-size: var(--text-lg); color: var(--color-gray-dark); margin-bottom: var(--spacing-lg);">
+                    Un equipo multidisciplinario de excelencia académica
+                </p>
+
+                <!-- Filters -->
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="role-filter">Rol:</label>
+                        <select id="role-filter" class="form-select">
+                            <option value="">Todos</option>
+                            <option value="Director">Director</option>
+                            <option value="Co-Directora">Co-Directora</option>
+                            <option value="Investigador Principal">Investigador Principal</option>
+                            <option value="Investigador Adjunto">Investigador Adjunto</option>
+                            <option value="Investigador Joven">Investigador Joven</option>
+                            <option value="Investigador Asociado">Investigador Asociado</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="institution-filter">Institución:</label>
+                        <select id="institution-filter" class="form-select">
+                            <option value="">Todas</option>
+                            <option value="Universidad de Chile">Universidad de Chile</option>
+                            <option value="Pontificia Universidad Católica de Chile">Pontificia Universidad Católica de Chile</option>
+                            <option value="Stanford University">Stanford University</option>
+                            <option value="Universidad de Santiago de Chile">Universidad de Santiago de Chile</option>
+                            <option value="Universidad Adolfo Ibáñez">Universidad Adolfo Ibáñez</option>
+                            <option value="Universidad de Valparaíso">Universidad de Valparaíso</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <input type="text" id="search-investigators" class="form-input" placeholder="Buscar por nombre...">
+                    </div>
+                </div>
+
+                <!-- Investigators Grid -->
+                <div id="investigators-grid" class="grid grid-4">
+                    <!-- Investigators will be loaded here by JavaScript -->
+                </div>
+
+                <div id="no-results" class="text-center" style="display: none; padding: var(--spacing-xl);">
+                    <p style="font-size: var(--text-lg); color: var(--color-gray-dark);">No se encontraron investigadores con los criterios seleccionados.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Investigator Modal -->
+    <div id="investigator-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('investigator-modal')" aria-label="Cerrar modal">&times;</button>
+            <div id="modal-investigator-content">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MIPP</h3>
+                    <p>Millennium Institute for Productive Public Policy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="about.html">MIPP</a></li>
+                        <li><a href="research.html">Investigación</a></li>
+                        <li><a href="investigators.html">Investigadores</a></li>
+                        <li><a href="publications.html">Publicaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="events.html">Agenda</a></li>
+                        <li><a href="initiatives.html">Iniciativas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MIPP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/investigators.js"></script>
+</body>
+</html>

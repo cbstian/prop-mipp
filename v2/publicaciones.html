@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publicaciones científicas de MIPP - Investigación de frontera en inteligencia vegetal.">
+  <title>Publicaciones - MIPP</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="" class="header__logo">
+        <img src="assets/images/logo.svg" alt="MIPP Logo" onerror="this.style.display='none'">
+        <span>MIPP</span>
+      </a>
+      
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="que-es-mipp.html" class="nav__link">Qué es MIPP</a></li>
+          <li class="nav__item"><a href="investigacion.html" class="nav__link">Investigación</a></li>
+          <li class="nav__item"><a href="investigadores.html" class="nav__link">Investigadores</a></li>
+          <li class="nav__item"><a href="publicaciones.html" class="nav__link active">Publicaciones</a></li>
+          <li class="nav__item"><a href="eventos.html" class="nav__link">Eventos</a></li>
+          <li class="nav__item"><a href="iniciativas.html" class="nav__link">Iniciativas</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__background">
+      <img src="assets/images/publications-hero.jpg" alt="Publicaciones" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">Publicaciones</h1>
+        <p class="hero__subtitle">
+          Investigación de frontera publicada en las revistas más prestigiosas
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumbs -->
+  <section class="section" style="padding-top: var(--space-xl); padding-bottom: 0;">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <div class="breadcrumbs__item"><a href="">Home</a></div>
+        <div class="breadcrumbs__item">Publicaciones</div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section search-container" id="publicationsSection">
+    <div class="container">
+      <!-- Toolbar -->
+      <div class="flex justify-between items-center mb-2xl" style="flex-wrap: wrap; gap: var(--space-md);">
+        <div class="search-box" style="flex: 1; min-width: 300px;">
+          <input 
+            type="text" 
+            class="search-box__input" 
+            id="publicationSearch"
+            placeholder="Buscar por título, autores, revista..."
+            aria-label="Buscar publicaciones">
+          <span class="search-box__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </span>
+        </div>
+        <button class="btn btn--outline btn--small" id="exportBtn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          Exportar CSV
+        </button>
+      </div>
+      
+      <!-- Filters -->
+      <div class="filter-group mb-2xl">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="2025">2025</button>
+        <button class="filter-btn" data-filter="2024">2024</button>
+        <button class="filter-btn" data-filter="2023">2023</button>
+      </div>
+      
+      <!-- Publications List -->
+      <div id="publicationsList">
+        <!-- Publication 1 -->
+        <div class="publication-item" 
+             data-searchable="Plant intelligence Novel insights molecular signaling networks García López Silva Nature Plants 2025"
+             data-category="2025"
+             data-publication='{"title":"Plant intelligence: Novel insights from molecular signaling networks","authors":"García M., López R., Silva P., Martínez J.","journal":"Nature Plants","year":"2025","volume":"11","issue":"3","pages":"245-260","doi":"10.1038/s41477-025-01234-5"}'>
+          <h3 class="publication-item__title">
+            Plant intelligence: Novel insights from molecular signaling networks
+          </h3>
+          <div class="publication-item__authors">
+            García M., López R., Silva P., Martínez J.
+          </div>
+          <div class="publication-item__meta">
+            <strong>Nature Plants</strong> • 2025 • Vol. 11(3) • pp. 245-260
+          </div>
+          <div class="publication-item__tags">
+            <span class="tag">Señalización</span>
+            <span class="tag">Biología Molecular</span>
+            <span class="tag">Inteligencia Vegetal</span>
+          </div>
+          <div class="publication-item__actions">
+            <a href="https://doi.org/10.1038/s41477-025-01234-5" class="btn btn--small btn--primary" target="_blank">Ver artículo</a>
+            <button class="btn btn--small btn--ghost" onclick="copyDOI('10.1038/s41477-025-01234-5')">Copiar DOI</button>
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="publication-item" 
+             data-searchable="Genomic approaches understanding plant adaptation environmental stress Rodríguez Fernández Cell 2025"
+             data-category="2025"
+             data-publication='{"title":"Genomic approaches to understanding plant adaptation to environmental stress","authors":"Rodríguez A., Fernández C., López R.","journal":"Cell","year":"2025","volume":"188","issue":"8","pages":"1876-1892","doi":"10.1016/j.cell.2025.03.012"}'>
+          <h3 class="publication-item__title">
+            Genomic approaches to understanding plant adaptation to environmental stress
+          </h3>
+          <div class="publication-item__authors">
+            Rodríguez A., Fernández C., López R.
+          </div>
+          <div class="publication-item__meta">
+            <strong>Cell</strong> • 2025 • Vol. 188(8) • pp. 1876-1892
+          </div>
+          <div class="publication-item__tags">
+            <span class="tag">Genómica</span>
+            <span class="tag">Estrés Ambiental</span>
+            <span class="tag">Adaptación</span>
+          </div>
+          <div class="publication-item__actions">
+            <a href="https://doi.org/10.1016/j.cell.2025.03.012" class="btn btn--small btn--primary" target="_blank">Ver artículo</a>
+            <button class="btn btn--small btn--ghost" onclick="copyDOI('10.1016/j.cell.2025.03.012')">Copiar DOI</button>
+          </div>
+        </div>
+
+        <!-- Publication 3 -->
+        <div class="publication-item" 
+             data-searchable="Plant-microbe interactions role sustainable agriculture Silva García Science 2024"
+             data-category="2024"
+             data-publication='{"title":"Plant-microbe interactions and their role in sustainable agriculture","authors":"Silva P., García M., Martínez J.","journal":"Science","year":"2024","volume":"385","issue":"6712","pages":"1234-1240","doi":"10.1126/science.abcd1234"}'>
+          <h3 class="publication-item__title">
+            Plant-microbe interactions and their role in sustainable agriculture
+          </h3>
+          <div class="publication-item__authors">
+            Silva P., García M., Martínez J.
+          </div>
+          <div class="publication-item__meta">
+            <strong>Science</strong> • 2024 • Vol. 385(6712) • pp. 1234-1240
+          </div>
+          <div class="publication-item__tags">
+            <span class="tag">Ecología</span>
+            <span class="tag">Microbioma</span>
+            <span class="tag">Agricultura Sostenible</span>
+          </div>
+          <div class="publication-item__actions">
+            <a href="https://doi.org/10.1126/science.abcd1234" class="btn btn--small btn--primary" target="_blank">Ver artículo</a>
+            <button class="btn btn--small btn--ghost" onclick="copyDOI('10.1126/science.abcd1234')">Copiar DOI</button>
+          </div>
+        </div>
+
+        <!-- Publication 4 -->
+        <div class="publication-item" 
+             data-searchable="Transcriptional regulation plant responses biotic stress López Fernández Plant Cell 2024"
+             data-category="2024"
+             data-publication='{"title":"Transcriptional regulation of plant responses to biotic stress","authors":"López R., Fernández C., Rodríguez A.","journal":"The Plant Cell","year":"2024","volume":"36","issue":"6","pages":"2145-2163","doi":"10.1093/plcell/koae089"}'>
+          <h3 class="publication-item__title">
+            Transcriptional regulation of plant responses to biotic stress
+          </h3>
+          <div class="publication-item__authors">
+            López R., Fernández C., Rodríguez A.
+          </div>
+          <div class="publication-item__meta">
+            <strong>The Plant Cell</strong> • 2024 • Vol. 36(6) • pp. 2145-2163
+          </div>
+          <div class="publication-item__tags">
+            <span class="tag">Regulación Génica</span>
+            <span class="tag">Estrés Biótico</span>
+            <span class="tag">Transcriptómica</span>
+          </div>
+          <div class="publication-item__actions">
+            <a href="https://doi.org/10.1093/plcell/koae089" class="btn btn--small btn--primary" target="_blank">Ver artículo</a>
+            <button class="btn btn--small btn--ghost" onclick="copyDOI('10.1093/plcell/koae089')">Copiar DOI</button>
+          </div>
+        </div>
+
+        <!-- Publication 5 -->
+        <div class="publication-item" 
+             data-searchable="Evolutionary ecology plant defense mechanisms Martínez Silva Ecology Letters 2023"
+             data-category="2023"
+             data-publication='{"title":"Evolutionary ecology of plant defense mechanisms","authors":"Martínez J., Silva P., García M.","journal":"Ecology Letters","year":"2023","volume":"26","issue":"12","pages":"2001-2018","doi":"10.1111/ele.14321"}'>
+          <h3 class="publication-item__title">
+            Evolutionary ecology of plant defense mechanisms
+          </h3>
+          <div class="publication-item__authors">
+            Martínez J., Silva P., García M.
+          </div>
+          <div class="publication-item__meta">
+            <strong>Ecology Letters</strong> • 2023 • Vol. 26(12) • pp. 2001-2018
+          </div>
+          <div class="publication-item__tags">
+            <span class="tag">Ecología Evolutiva</span>
+            <span class="tag">Defensa Vegetal</span>
+            <span class="tag">Coevolución</span>
+          </div>
+          <div class="publication-item__actions">
+            <a href="https://doi.org/10.1111/ele.14321" class="btn btn--small btn--primary" target="_blank">Ver artículo</a>
+            <button class="btn btn--small btn--ghost" onclick="copyDOI('10.1111/ele.14321')">Copiar DOI</button>
+          </div>
+        </div>
+
+        <!-- Publication 6 -->
+        <div class="publication-item" 
+             data-searchable="Metabolic engineering enhanced plant resilience climate change García Rodríguez Nature Biotechnology 2023"
+             data-category="2023"
+             data-publication='{"title":"Metabolic engineering for enhanced plant resilience to climate change","authors":"García M., Rodríguez A., López R.","journal":"Nature Biotechnology","year":"2023","volume":"41","issue":"9","pages":"1234-1245","doi":"10.1038/s41587-023-01789-x"}'>
+          <h3 class="publication-item__title">
+            Metabolic engineering for enhanced plant resilience to climate change
+          </h3>
+          <div class="publication-item__authors">
+            García M., Rodríguez A., López R.
+          </div>
+          <div class="publication-item__meta">
+            <strong>Nature Biotechnology</strong> • 2023 • Vol. 41(9) • pp. 1234-1245
+          </div>
+          <div class="publication-item__tags">
+            <span class="tag">Biotecnología</span>
+            <span class="tag">Ingeniería Metabólica</span>
+            <span class="tag">Cambio Climático</span>
+          </div>
+          <div class="publication-item__actions">
+            <a href="https://doi.org/10.1038/s41587-023-01789-x" class="btn btn--small btn--primary" target="_blank">Ver artículo</a>
+            <button class="btn btn--small btn--ghost" onclick="copyDOI('10.1038/s41587-023-01789-x')">Copiar DOI</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__section">
+          <h3>MIPP</h3>
+          <p>Instituto Milenio en Inteligencia de Plantas. Investigación de excelencia en biología vegetal y biotecnología.</p>
+          <div class="footer__social">
+            <a href="https://twitter.com/mipp" class="footer__social-link" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/company/mipp" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://github.com/mipp" class="footer__social-link" aria-label="GitHub">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h3>Navegación</h3>
+          <div class="footer__links">
+            <a href="" class="footer__link">Home</a>
+            <a href="que-es-mipp.html" class="footer__link">Qué es MIPP</a>
+            <a href="investigacion.html" class="footer__link">Investigación</a>
+            <a href="investigadores.html" class="footer__link">Investigadores</a>
+            <a href="publicaciones.html" class="footer__link">Publicaciones</a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h3>Recursos</h3>
+          <div class="footer__links">
+            <a href="eventos.html" class="footer__link">Eventos</a>
+            <a href="iniciativas.html" class="footer__link">Iniciativas</a>
+            <a href="contacto.html" class="footer__link">Contacto</a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h3>Contacto</h3>
+          <div class="footer__links">
+            <a href="mailto:contacto@mipp.cl" class="footer__link">contacto@mipp.cl</a>
+            <a href="tel:+56912345678" class="footer__link">+56 9 1234 5678</a>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.8;">Santiago, Chile</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 MIPP - Milenio en Inteligencia de Plantas. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Copy DOI to clipboard
+    function copyDOI(doi) {
+      navigator.clipboard.writeText(doi).then(() => {
+        alert('DOI copiado al portapapeles: ' + doi);
+      });
+    }
+
+    // Initialize filters and export
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const items = document.querySelectorAll('[data-category]');
+      window.mippUtils.initFilters(filterButtons, items, 'category');
+      
+      // Export to CSV
+      document.getElementById('exportBtn').addEventListener('click', () => {
+        const visiblePublications = Array.from(document.querySelectorAll('.publication-item'))
+          .filter(item => item.style.display !== 'none')
+          .map(item => JSON.parse(item.getAttribute('data-publication')));
+        
+        if (visiblePublications.length > 0) {
+          window.mippUtils.exportToCSV(visiblePublications, 'mipp-publicaciones.csv');
+        } else {
+          alert('No hay publicaciones para exportar');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

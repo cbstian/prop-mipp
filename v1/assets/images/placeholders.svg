@@ -1,0 +1,43 @@
+<!-- Placeholder SVG Images -->
+<!-- Este archivo contiene ejemplos de placeholders SVG que puedes usar temporalmente -->
+
+<!-- Logo MIPP -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="20" fill="#203e8f"/>
+  <text x="100" y="120" font-family="Arial" font-size="80" font-weight="bold" fill="white" text-anchor="middle">M</text>
+</svg>
+
+<!-- Placeholder para Investigador -->
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#adafb2"/>
+  <circle cx="200" cy="150" r="60" fill="white" opacity="0.5"/>
+  <path d="M 120 250 Q 200 200 280 250 L 280 400 L 120 400 Z" fill="white" opacity="0.5"/>
+  <text x="200" y="350" font-family="Arial" font-size="20" fill="white" text-anchor="middle">Investigador</text>
+</svg>
+
+<!-- Placeholder para Evento -->
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#005dac"/>
+  <circle cx="400" cy="200" r="80" fill="white" opacity="0.3"/>
+  <text x="400" y="220" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Imagen del Evento</text>
+</svg>
+
+<!-- Placeholder General -->
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#0fb1c8"/>
+  <text x="960" y="540" font-family="Arial" font-size="48" fill="white" text-anchor="middle">Imagen Placeholder</text>
+  <text x="960" y="600" font-family="Arial" font-size="24" fill="white" text-anchor="middle" opacity="0.8">1920 x 1080</text>
+</svg>
+
+<!-- 
+Para usar estos placeholders:
+1. Copia el código SVG deseado
+2. Guárdalo como archivo .svg en assets/images/
+3. Referéncialos en el HTML:
+   <img src="assets/images/placeholder-person.svg" alt="...">
+
+Para crear placeholders reales para producción:
+- Usa https://placeholder.com/
+- O servicios como https://via.placeholder.com/
+- O genera con herramientas como Photoshop/Figma
+-->

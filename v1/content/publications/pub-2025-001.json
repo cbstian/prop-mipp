@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "title": "Impacto de las Políticas de Innovación en Pymes Chilenas",
+  "authors": ["Rodríguez, P.", "González, M.", "Silva, A."],
+  "type": "Working Paper",
+  "year": 2025,
+  "journal": "MIPP Working Paper Series",
+  "number": "WP-2025-001",
+  "areas": ["Innovación", "Productividad"],
+  "abstract": "Este estudio analiza el impacto de programas públicos de apoyo a la innovación en pequeñas y medianas empresas chilenas durante el período 2018-2023. Utilizando métodos cuasi-experimentales, encontramos que las empresas participantes exhiben un incremento significativo en inversión en I+D y adopción de nuevas tecnologías. Los resultados sugieren que estos programas son efectivos en promover la innovación empresarial, pero su impacto varía según características de la firma y el sector.",
+  "keywords": ["innovación", "Pymes", "políticas públicas", "evaluación de impacto"],
+  "pdf": "https://example.com/papers/wp-2025-001.pdf",
+  "doi": "10.1234/mipp.2025.001",
+  "date": "2025-01-15",
+  "pages": 45,
+  "language": "es"
+}

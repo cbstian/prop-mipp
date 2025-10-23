@@ -1,0 +1,185 @@
+/* Investigators Page Styles */
+
+.filters-container {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+  padding: var(--spacing-md);
+  background-color: var(--color-gray-light);
+  border-radius: var(--radius-lg);
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.filter-group label {
+  font-weight: 500;
+  font-size: var(--text-sm);
+  color: var(--color-gray-dark);
+}
+
+.investigator-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.investigator-card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+}
+
+.investigator-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: var(--color-gray-medium);
+}
+
+.investigator-info {
+  padding: var(--spacing-md);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.investigator-name {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--brand-blue-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.investigator-role {
+  font-size: var(--text-sm);
+  color: var(--brand-cyan);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.investigator-institution {
+  font-size: var(--text-sm);
+  color: var(--color-gray-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.investigator-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: auto;
+}
+
+.investigator-areas .tag {
+  font-size: var(--text-xs);
+}
+
+/* Modal specific styles */
+.modal-investigator-header {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.modal-investigator-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+.modal-investigator-details h2 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.modal-investigator-meta {
+  color: var(--color-gray-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.modal-investigator-meta p {
+  margin-bottom: var(--spacing-xs);
+}
+
+.investigator-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.investigator-links a {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-gray-light);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  transition: all var(--transition-fast);
+}
+
+.investigator-links a:hover {
+  background-color: var(--brand-cyan);
+  color: var(--color-white);
+}
+
+.modal-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.modal-section h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-gray-light);
+}
+
+.publications-list {
+  list-style: none;
+}
+
+.publications-list li {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.publications-list li:last-child {
+  border-bottom: none;
+}
+
+.publication-title {
+  font-weight: 600;
+  color: var(--brand-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.publication-meta {
+  font-size: var(--text-sm);
+  color: var(--color-gray-dark);
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+  }
+  
+  .modal-investigator-header {
+    flex-direction: column;
+  }
+  
+  .modal-investigator-photo {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+}

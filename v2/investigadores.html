@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce a los investigadores de MIPP - Expertos en inteligencia vegetal y biotecnología.">
+  <title>Investigadores - MIPP</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="" class="header__logo">
+        <img src="assets/images/logo.svg" alt="MIPP Logo" onerror="this.style.display='none'">
+        <span>MIPP</span>
+      </a>
+      
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="que-es-mipp.html" class="nav__link">Qué es MIPP</a></li>
+          <li class="nav__item"><a href="investigacion.html" class="nav__link">Investigación</a></li>
+          <li class="nav__item"><a href="investigadores.html" class="nav__link active">Investigadores</a></li>
+          <li class="nav__item"><a href="publicaciones.html" class="nav__link">Publicaciones</a></li>
+          <li class="nav__item"><a href="eventos.html" class="nav__link">Eventos</a></li>
+          <li class="nav__item"><a href="iniciativas.html" class="nav__link">Iniciativas</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__background">
+      <img src="assets/images/team-hero.jpg" alt="Investigadores MIPP" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">Nuestro Equipo</h1>
+        <p class="hero__subtitle">
+          Investigadores de excelencia trabajando en la frontera del conocimiento
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumbs -->
+  <section class="section" style="padding-top: var(--space-xl); padding-bottom: 0;">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <div class="breadcrumbs__item"><a href="">Home</a></div>
+        <div class="breadcrumbs__item">Investigadores</div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="section search-container">
+    <div class="container">
+      <div class="search-box" style="max-width: 600px; margin: 0 auto var(--space-2xl);">
+        <input 
+          type="text" 
+          class="search-box__input" 
+          placeholder="Buscar investigador por nombre, universidad o área..."
+          aria-label="Buscar investigadores">
+        <span class="search-box__icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </span>
+      </div>
+      
+      <div class="filter-group" style="justify-content: center;">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="investigador-principal">Investigadores Principales</button>
+        <button class="filter-btn" data-filter="investigador-asociado">Investigadores Asociados</button>
+        <button class="filter-btn" data-filter="postdoc">Postdoctorados</button>
+      </div>
+      
+      <!-- Investigators Grid -->
+      <div class="grid grid--4">
+        <!-- Investigador 1 -->
+        <div class="card investigator-card" 
+             data-searchable="María García Universidad de Chile Señalización celular biología molecular"
+             data-category="investigador-principal">
+          <div class="card__body">
+            <div class="investigator-card__image">
+              <img src="assets/images/personas/ElisaDuranMicco-1.jpg" alt="Elisa Durán Micco" loading="lazy">
+            </div>
+            <h3 class="investigator-card__name">Elisa Durán Micco</h3>
+            <p class="investigator-card__affiliation">Universidad de Chile</p>
+            <div class="mb-md">
+              <span class="badge badge--primary">Investigadora Principal</span>
+            </div>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-bottom: var(--space-md);">
+              Especialista en señalización celular y respuestas al estrés en plantas
+            </p>
+            <div class="investigator-card__links">
+              <a href="investigadores/maria-garcia.html" class="btn btn--small btn--primary">Ver perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investigador 2 -->
+        <div class="card investigator-card" 
+             data-searchable="Juan Escobar Pontificia Universidad Católica Genómica bioinformática"
+             data-category="investigador-principal">
+          <div class="card__body">
+            <div class="investigator-card__image">
+              <img src="assets/images/personas/Juan-Escobar-1x1-1.jpg" alt="Juan Escobar" loading="lazy">
+            </div>
+            <h3 class="investigator-card__name">Juan Escobar</h3>
+            <p class="investigator-card__affiliation">Pontificia Universidad Católica</p>
+            <div class="mb-md">
+              <span class="badge badge--primary">Investigador Principal</span>
+            </div>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-bottom: var(--space-md);">
+              Experto en genómica vegetal y análisis bioinformático
+            </p>
+            <div class="investigator-card__links">
+              <a href="investigadores/roberto-lopez.html" class="btn btn--small btn--primary">Ver perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investigador 3 -->
+        <div class="card investigator-card" 
+             data-searchable="Benjamin Universidad de Santiago Ecología interacciones planta-microorganismo"
+             data-category="investigador-asociado">
+          <div class="card__body">
+            <div class="investigator-card__image">
+              <img src="assets/images/personas/benjamin.jpg" alt="Benjamin" loading="lazy">
+            </div>
+            <h3 class="investigator-card__name">Benjamin</h3>
+            <p class="investigator-card__affiliation">Universidad de Santiago</p>
+            <div class="mb-md">
+              <span class="badge badge--secondary">Investigador Asociado</span>
+            </div>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-bottom: var(--space-md);">
+              Especialista en ecología vegetal e interacciones planta-microorganismo
+            </p>
+            <div class="investigator-card__links">
+              <a href="investigadores/patricia-silva.html" class="btn btn--small btn--primary">Ver perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investigador 4 -->
+        <div class="card investigator-card" 
+             data-searchable="A. Canales Universidad de Concepción Fisiología vegetal metabolismo"
+             data-category="investigador-asociado">
+          <div class="card__body">
+            <div class="investigator-card__image">
+              <img src="assets/images/personas/a-canales.jpg" alt="A. Canales" loading="lazy">
+            </div>
+            <h3 class="investigator-card__name">A. Canales</h3>
+            <p class="investigator-card__affiliation">Universidad de Concepción</p>
+            <div class="mb-md">
+              <span class="badge badge--secondary">Investigador Asociado</span>
+            </div>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-bottom: var(--space-md);">
+              Experto en fisiología vegetal y metabolismo secundario
+            </p>
+            <div class="investigator-card__links">
+              <a href="investigadores/juan-martinez.html" class="btn btn--small btn--primary">Ver perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investigador 5 -->
+        <div class="card investigator-card" 
+             data-searchable="Alvin E. Roth Universidad Austral Biotecnología genética molecular"
+             data-category="postdoc">
+          <div class="card__body">
+            <div class="investigator-card__image">
+              <img src="assets/images/personas/440px-Alvin_E._Roth_3_2012.jpg" alt="Alvin E. Roth" loading="lazy">
+            </div>
+            <h3 class="investigator-card__name">Alvin E. Roth</h3>
+            <p class="investigator-card__affiliation">Universidad Austral</p>
+            <div class="mb-md">
+              <span class="badge badge--gray">Postdoctorado</span>
+            </div>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-bottom: var(--space-md);">
+              Investigador postdoctoral en biotecnología vegetal
+            </p>
+            <div class="investigator-card__links">
+              <a href="investigadores/ana-rodriguez.html" class="btn btn--small btn--primary">Ver perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investigador 6 -->
+        <div class="card investigator-card" 
+             data-searchable="Elisa Durán Micco Universidad de Valparaíso Biología molecular expresión génica"
+             data-category="postdoc">
+          <div class="card__body">
+            <div class="investigator-card__image">
+              <img src="assets/images/personas/ElisaDuranMicco-1.jpg" alt="Elisa Durán Micco" loading="lazy">
+            </div>
+            <h3 class="investigator-card__name">Elisa Durán Micco</h3>
+            <p class="investigator-card__affiliation">Universidad de Valparaíso</p>
+            <div class="mb-md">
+              <span class="badge badge--gray">Postdoctorado</span>
+            </div>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-bottom: var(--space-md);">
+              Investigadora postdoctoral en regulación de la expresión génica
+            </p>
+            <div class="investigator-card__links">
+              <a href="investigadores/carlos-fernandez.html" class="btn btn--small btn--primary">Ver perfil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__section">
+          <h3>MIPP</h3>
+          <p>Instituto Milenio en Inteligencia de Plantas. Investigación de excelencia en biología vegetal y biotecnología.</p>
+          <div class="footer__social">
+            <a href="https://twitter.com/mipp" class="footer__social-link" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/company/mipp" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://github.com/mipp" class="footer__social-link" aria-label="GitHub">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h3>Navegación</h3>
+          <div class="footer__links">
+            <a href="" class="footer__link">Home</a>
+            <a href="que-es-mipp.html" class="footer__link">Qué es MIPP</a>
+            <a href="investigacion.html" class="footer__link">Investigación</a>
+            <a href="investigadores.html" class="footer__link">Investigadores</a>
+            <a href="publicaciones.html" class="footer__link">Publicaciones</a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h3>Recursos</h3>
+          <div class="footer__links">
+            <a href="eventos.html" class="footer__link">Eventos</a>
+            <a href="iniciativas.html" class="footer__link">Iniciativas</a>
+            <a href="contacto.html" class="footer__link">Contacto</a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h3>Contacto</h3>
+          <div class="footer__links">
+            <a href="mailto:contacto@mipp.cl" class="footer__link">contacto@mipp.cl</a>
+            <a href="tel:+56912345678" class="footer__link">+56 9 1234 5678</a>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.8;">Santiago, Chile</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 MIPP - Milenio en Inteligencia de Plantas. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize filters for investigators
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const items = document.querySelectorAll('[data-category]');
+      window.mippUtils.initFilters(filterButtons, items, 'category');
+    });
+  </script>
+</body>
+</html>

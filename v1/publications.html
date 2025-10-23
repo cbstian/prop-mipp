@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora las publicaciones académicas del MIPP sobre políticas públicas productivas, innovación y desarrollo.">
+    <title>Publicaciones - MIPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/publications.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="site-logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#203e8f"/>
+                        <text x="20" y="28" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">M</text>
+                    </svg>
+                    <span>MIPP</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">MIPP</a></li>
+                        <li><a href="research.html">Investigación</a></li>
+                        <li><a href="investigators.html">Investigadores</a></li>
+                        <li><a href="publications.html" class="active">Publicaciones</a></li>
+                        <li><a href="events.html">Agenda</a></li>
+                        <li><a href="initiatives.html">Iniciativas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="breadcrumbs bg-gray-light">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Publicaciones</li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="text-center">Publicaciones</h1>
+                <p class="text-center" style="font-size: var(--text-lg); color: var(--color-gray-dark); margin-bottom: var(--spacing-lg);">
+                    Investigación de excelencia en políticas públicas productivas
+                </p>
+
+                <!-- Filters and Search -->
+                <div class="publications-controls">
+                    <div class="filters-row">
+                        <div class="filter-group">
+                            <label for="type-filter">Tipo:</label>
+                            <select id="type-filter" class="form-select">
+                                <option value="">Todos</option>
+                                <option value="Journal Article">Artículo de Revista</option>
+                                <option value="Working Paper">Working Paper</option>
+                                <option value="Book Chapter">Capítulo de Libro</option>
+                                <option value="Policy Brief">Policy Brief</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="year-filter">Año:</label>
+                            <select id="year-filter" class="form-select">
+                                <option value="">Todos</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="area-filter">Área:</label>
+                            <select id="area-filter" class="form-select">
+                                <option value="">Todas</option>
+                                <option value="Productividad">Productividad</option>
+                                <option value="Innovación">Innovación</option>
+                                <option value="Mercado Laboral">Mercado Laboral</option>
+                                <option value="Desarrollo Regional">Desarrollo Regional</option>
+                            </select>
+                        </div>
+                        <div class="filter-group" style="flex: 2;">
+                            <label for="search-publications">Buscar:</label>
+                            <input type="text" id="search-publications" class="form-input" placeholder="Título, autor o palabra clave...">
+                        </div>
+                    </div>
+                    <div class="actions-row">
+                        <button id="reset-filters" class="btn btn-outline btn-sm">Limpiar Filtros</button>
+                        <button id="export-csv" class="btn btn-secondary btn-sm">Exportar a CSV</button>
+                        <div class="results-count">
+                            Mostrando <strong id="count-display">0</strong> publicaciones
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publications List -->
+                <div id="publications-list" class="publications-list">
+                    <!-- Publications will be loaded here by JavaScript -->
+                </div>
+
+                <div id="no-results" class="text-center" style="display: none; padding: var(--spacing-xl);">
+                    <p style="font-size: var(--text-lg); color: var(--color-gray-dark);">No se encontraron publicaciones con los criterios seleccionados.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MIPP</h3>
+                    <p>Millennium Institute for Productive Public Policy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="about.html">MIPP</a></li>
+                        <li><a href="research.html">Investigación</a></li>
+                        <li><a href="investigators.html">Investigadores</a></li>
+                        <li><a href="publications.html">Publicaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="events.html">Agenda</a></li>
+                        <li><a href="initiatives.html">Iniciativas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MIPP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/publications.js"></script>
+</body>
+</html>

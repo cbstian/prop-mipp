@@ -1,0 +1,50 @@
+{
+  "site": {
+    "name": "MIPP",
+    "fullName": "Millennium Institute for Productive Public Policy",
+    "url": "https://mipp.cl",
+    "description": "Centro de investigación de excelencia en políticas públicas productivas en Chile",
+    "language": "es",
+    "locale": "es_CL"
+  },
+  "contact": {
+    "email": "contacto@mipp.cl",
+    "collaborations": "colaboraciones@mipp.cl",
+    "press": "prensa@mipp.cl",
+    "address": {
+      "street": "Avenida Libertador Bernardo O'Higgins 123",
+      "city": "Santiago",
+      "region": "Región Metropolitana",
+      "country": "Chile"
+    }
+  },
+  "social": {
+    "twitter": "https://twitter.com/mipp_cl",
+    "linkedin": "https://www.linkedin.com/company/mipp-cl",
+    "youtube": "https://www.youtube.com/@mipp_cl"
+  },
+  "branding": {
+    "colors": {
+      "brandBlueDark": "#203e8f",
+      "brandCyan": "#0fb1c8",
+      "brandGray": "#adafb2",
+      "brandBlue": "#005dac"
+    },
+    "fonts": {
+      "ui": "Inter",
+      "display": "Merriweather"
+    }
+  },
+  "features": {
+    "search": true,
+    "filters": true,
+    "exportCSV": true,
+    "analytics": false,
+    "newsletter": false
+  },
+  "content": {
+    "investigatorsPerPage": 12,
+    "publicationsPerPage": 20,
+    "eventsPerPage": 12
+  }
+}
